@@ -11,9 +11,11 @@ const Quiz = () => {
                 <h1>Quiz on {name}</h1>
                 <h3>Total Questions: {total}</h3>
             </div>
-            {
-                questions.map(singleQuestion => <Question key={singleQuestion.id} singleQuestion={singleQuestion}></Question>)
-            }
+            <div className='container'>
+                {
+                    questions.map(singleQuestion => <Question key={singleQuestion.id} singleQuestion={singleQuestion}></Question>)
+                }
+            </div>
         </div>
     );
 };

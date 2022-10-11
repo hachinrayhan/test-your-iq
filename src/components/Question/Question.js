@@ -3,7 +3,7 @@ import React from 'react';
 const Question = ({ singleQuestion }) => {
     const { id, question, options } = singleQuestion;
     return (
-        <div>
+        <div className='bg-info my-2 p-3 rounded'>
             <h3>Question: {question.replace(/(<([^>]+)>)/ig, '')}</h3>
             {
                 options.map((option, index) => <div key={index}>
