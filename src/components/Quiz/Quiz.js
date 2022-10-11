@@ -9,6 +9,9 @@ const Quiz = () => {
         <div>
             <h1>Quiz on {name}</h1>
             <h3>Total Questions: {total}</h3>
+            {
+                questions.map(question => )
+            }
         </div>
     );
 };
