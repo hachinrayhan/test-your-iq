@@ -13,7 +13,7 @@ const Quiz = () => {
             </div>
             <div className='container'>
                 {
-                    questions.map(singleQuestion => <Question key={singleQuestion.id} singleQuestion={singleQuestion}></Question>)
+                    questions.map((singleQuestion, index) => <Question key={singleQuestion.id} singleQuestion={singleQuestion} index={index}></Question>)
                 }
             </div>
         </div>
