@@ -1,6 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
+import Quiz from '../Quiz/Quiz';
 import './Topic.css'
 
 const Topic = ({ topic }) => {
@@ -13,7 +15,7 @@ const Topic = ({ topic }) => {
                     <h1>{name}</h1>
                     <h2>Number of Questions: {total}</h2>
                 </Card.Body>
-                <button className='btn btn-primary'>Start Quiz</button>
+                <Link to={`/quiz/${topic.id}`}><button className='btn btn-primary'>Start Quiz</button></Link>
             </Card>
         </Col>
     );
