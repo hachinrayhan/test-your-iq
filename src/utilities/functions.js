@@ -18,4 +18,8 @@ const checkAnswer = (value, correctAnswer) => {
     );
 }
 
-export { checkAnswer };
+const showAnswer = correctAnswer => {
+    alert(correctAnswer);
+}
+
+export { checkAnswer, showAnswer };

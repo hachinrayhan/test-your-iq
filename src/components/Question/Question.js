@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkAnswer } from '../../utilities/functions';
+import { checkAnswer, showAnswer } from '../../utilities/functions';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import './Question.css'
 
@@ -8,7 +8,7 @@ const Question = ({ singleQuestion, index }) => {
     return (
         <div className='bg-info my-2 p-4 rounded question'>
             <div>
-                <EyeIcon className='icon' />
+                <EyeIcon onClick={() => showAnswer(correctAnswer)} className='icon' />
             </div>
             <h3><span className='bg-light p-1 rounded me-2'>Question-{index + 1}:</span>{question.replace(/(<([^>]+)>)/ig, '')}</h3>
             {
