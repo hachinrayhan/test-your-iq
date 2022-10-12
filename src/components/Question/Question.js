@@ -1,13 +1,14 @@
 import React from 'react';
 import { checkAnswer } from '../../utilities/functions';
-import { BeakerIcon } from '@heroicons/react/24/solid'
+import { EyeIcon } from '@heroicons/react/24/solid'
+import './Question.css'
 
 const Question = ({ singleQuestion, index }) => {
     const { id, question, options, correctAnswer } = singleQuestion;
     return (
-        <div className='bg-info my-2 p-3 rounded'>
+        <div className='bg-info my-2 p-4 rounded question'>
             <div>
-                <BeakerIcon className="h-6 w-6 text-blue-500" />
+                <EyeIcon className='icon' />
             </div>
             <h3><span className='bg-light p-1 rounded me-2'>Question-{index + 1}:</span>{question.replace(/(<([^>]+)>)/ig, '')}</h3>
             {

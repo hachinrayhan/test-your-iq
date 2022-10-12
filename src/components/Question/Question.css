@@ -1,0 +1,17 @@
+.question {
+    position: relative;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 40%;
+    padding: 3px;
+}
+
+.icon:hover {
+    background-color: coral;
+}
