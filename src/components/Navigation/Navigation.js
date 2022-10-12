@@ -8,7 +8,7 @@ function Navigation() {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="/">Test Your IQ</Navbar.Brand>
+                <Navbar.Brand className='text-success fw-bold fs-2' href="/">Test Your IQ</Navbar.Brand>
                 <Nav className="m-auto links">
                     <Link to={'/'}>Home</Link>
                     <Link to={'/statistics'}>Statistics</Link>
