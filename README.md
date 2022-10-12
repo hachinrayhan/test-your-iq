@@ -1,6 +1,6 @@
 Project Name: Test Your Iq
 
-Live Site Link: 
+Live Site Link: https://testyouriq-assignment-9.netlify.app/
 
 Project Features:
 1. You can select a topic from different topics.
