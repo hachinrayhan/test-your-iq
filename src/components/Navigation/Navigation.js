@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navigation.css'
 
 function Navigation() {
@@ -10,9 +10,9 @@ function Navigation() {
             <Container>
                 <Navbar.Brand className='text-success fw-bold fs-2' href="/">Test Your IQ</Navbar.Brand>
                 <Nav className="m-auto links">
-                    <Link to={'/'}>Home</Link>
-                    <Link to={'/statistics'}>Statistics</Link>
-                    <Link to={'/blog'}>Blog</Link>
+                    <NavLink to={'/'}>Home</NavLink>
+                    <NavLink to={'/statistics'}>Statistics</NavLink>
+                    <NavLink to={'/blog'}>Blog</NavLink>
                 </Nav>
             </Container>
         </Navbar>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Navigation from '../components/Navigation/Navigation';
 
 const Main = () => {
@@ -7,6 +8,7 @@ const Main = () => {
         <div>
             <Navigation></Navigation>
             <Outlet></Outlet>
+            <ToastContainer />
         </div>
     );
 };

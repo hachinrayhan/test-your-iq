@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div className='container'>
             <Header></Header>
-            <Row xs={1} md={2} className="g-5">
+            <Row xs={1} md={2} className="g-5 mb-5">
                 {
                     topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
                 }
